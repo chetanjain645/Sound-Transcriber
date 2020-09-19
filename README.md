@@ -28,3 +28,6 @@ for audio file into transcription you go to flask folder and run
 for aws portal demo demonstration with python go to jupyter notebooks and find aws one.
 
 and check out all codes for more as well.
+
+
+Make sure you put only PCM (pulse code modulated) WAV file only.
