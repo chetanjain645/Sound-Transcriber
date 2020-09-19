@@ -1,0 +1,65 @@
+{% extends "base.html" %} {% block content %}
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+*{box-sizing: border-box;}
+
+  input[type=text]{
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+  }
+h1
+{
+  font-family: verdana;
+  font-size: 50px;
+display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #111;
+  }
+p
+{
+  font-color:white;
+}
+</style>
+<h1>Audio File Processing</h1>
+<div class="container">
+<form method="POST">
+    <label for="fname">Type the path of the Folder</label></br></br>
+    <input name="file_path" size="100" id="fname" placeholder="File Path and use \\ for seperator"> </br></br>
+    <p>You can use this path for demo : D:\\Internships\\aigora\\flask\\audio_chunks</p>
+  </br></br></br>
+    <label for="lname">Type the FileName</label></br></br>
+    <input name="filename" size="100" id="lname" placeholder="File Name with exetension. Wav supported only"></br></br>
+    <p>You can use this file for demo : test.wav</p>
+  </br></br></br>
+    <input type="submit">
+</form>
+</div>
+{% endblock %}

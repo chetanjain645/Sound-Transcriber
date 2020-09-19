@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block content %}
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+  }
+  a
+  {
+    border-style: solid;
+    border-color: white;
+  }
+
+  li {
+    float: center;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  h1
+{
+  font-family: verdana;
+  font-size: 80px;
+display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #111;
+  }
+.container
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+</style>
+<h1>Sound Analyser</h1>
+<div class="container">
+<ul>
+  <li><h2><a href="http://localhost:5000/upload">Audio File to Transcript</a></h2></li>
+  <li><h2><a href="http://localhost:5000/audiosaver">Live Transcript</a></h2></li>
+</ul>
+</div>
+{% endblock %}

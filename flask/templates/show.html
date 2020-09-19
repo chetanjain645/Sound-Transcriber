@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+
+<style>
+h1
+{
+font-size:45px;
+color:#fff;
+}
+h3
+{
+  size:30px;
+  color:#fff;
+}
+
+p
+{
+  color:#fff;
+}
+
+</style>
+
+<h1>End Results</h1>
+
+<h3>Transcribed text : </h3> <p>{{ transcribed_text }}</p>
+<h3>Words spoken in one minute : </h3> <p>{{ audio_words_per_minute }}</p>
+
+{% if plotfile1 != None %}
+<h3>filler word graph : </h3><img src="{{ plotfile1 }}" width=500></br>
+{% endif %}
+
+{% if plotfile2 != None %}
+<h3>Energy graph : </h3><img src="{{ plotfile2 }}" width=500></br>
+{% endif %}
+
+{% endblock %}
